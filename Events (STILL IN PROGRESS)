@@ -1,0 +1,73 @@
+local Events = math.random(1,100)
+local SpeicalEvents = math.random(1,5)
+
+if Events == 1 then
+    game.Players.LocalPlayer.Character.Humonaid.Walkspeed = 30
+    ShowEvents.Text = "Event: Speed"
+end
+
+if Event == 2 then
+    game.Players.LocalPlayer.Character.Humonaid.Walkspeed = 0
+    ShowEvents.Text = "Event: Nothing"
+end
+
+if Event == 3 then
+    game.Players.LocalPlayer.Character.Humonaid.Walkspeed = 16
+    ShowEvents.Text = "Event: Normal Speed"
+end
+
+if Event == 4 then
+    local EntitySpawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/dreadmania/Scripts/main/EntitySpawner.lua%22"))()
+local Configuration = {}
+
+EntitySpawner:Spawn("Rush", unpack(Configuration))
+    ShowEvents.Text = "Event: Rush"
+end
+
+if Event == 5 then
+    local EntitySpawner = loadstring(game:HttpGet("https://raw.githubusercontent.com/dreadmania/Scripts/main/EntitySpawner.lua%22"))()
+local Configuration = {}
+
+EntitySpawner:Spawn("Ambush", unpack(Configuration))
+    ShowEvents.Text = "Event: Ambush"
+end
+
+if Event == 6 then
+    require(game.ReplicatedStorage.ReplicaDataModule).event.Knobs:Fire(tonumber("math.random(1,1734897329431)"))
+    ShowEvents.Text = "Event: Random Amount Of Knobs"
+end
+
+if Event == 7 then
+     require(game.ReplicatedStorage.ReplicaDataModule).event.Revives:Fire(tonumber("math.random(1,1734897329431)"))
+    ShowEvents.Text = "Event: Random Amount Of Revives"
+end
+
+if Event == 8 then
+    --give random amount of Coins
+    ShowEvents.Text = "Event: Random Amount Of Coins"
+end
+
+if Event == 9 then
+    --give random amount of boosts
+    ShowEvents.Text = "Event: Random Amount Of Boosts"
+end
+
+if Event == 10 then
+    loadstring(game:httpget('https://raw.githubusercontent.com/OfficerMesh/BOMB/main/script'))()
+    ShowEvents.Text = "Event: Bomb Item"
+end
+
+if Event == 11 then
+    --100 screech script
+    ShowEvents.Text = "Event: 100 Screeches"
+end
+
+if Event == 12 then
+    loadstring(game:httpget('https://raw.githubusercontent.com/ZepsyyCodesLUA/Utilities/main/Doors/Crucifix.lua'))()
+    ShowEvents.Text = "Event: Crucifix
+end
+
+
+
+
+
